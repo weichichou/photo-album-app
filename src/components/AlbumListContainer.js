@@ -1,7 +1,7 @@
 import React from "react";
 import AlbumList from "./AlbumList";
 import { connect } from "react-redux";
-import { helloWorld, addAlbum, setAlbum, getAlbum } from '../actions/test';
+import { helloWorld, addAlbum, setAlbum, getAlbum, createAlbum } from '../actions/test';
 import AddAlbumForm from "./AddAlbumForm";
 
 /* const sleep = time => new Promise( resolve => {
@@ -74,4 +74,4 @@ const mapStateToProps = (state) => {
 }
 
 // export default connect(null, {helloWorld: helloWorld})(AlbumListContainer);
-export default connect(mapStateToProps, {helloWorld, addAlbum, setAlbum, getAlbum})(AlbumListContainer);
+export default connect(mapStateToProps, {helloWorld, addAlbum, setAlbum, getAlbum, createAlbum})(AlbumListContainer);

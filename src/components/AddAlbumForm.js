@@ -5,6 +5,7 @@ export default class AddAlbumForm extends React.Component {
 
     handleSubmit = (event) => {
         event.preventDefault()
+        console.log('clicked')
         if (this.state.title){
             this.props.createAlbum(this.state.title)
         }
@@ -21,7 +22,7 @@ export default class AddAlbumForm extends React.Component {
             <form onSubmit={this.handleSubmit}>
                 <label>
                     Title:
-                    <input type='text' name='title' value={this.state.value} onChange={this.handleSubmit}></input>
+                    <input type='text' name='title' value={this.state.value} onChange={this.handleChange}></input>
                 </label>
                 <button type='submit'>Add</button>
             </form>
